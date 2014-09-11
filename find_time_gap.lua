@@ -1,5 +1,5 @@
 -- Chisel description
-description = "finds time gaps between succeeding events larger than a threshold"
+description = "Finds time gaps between succeeding events larger than a threshold. Output fir formatted according to '%evt.num %evt.time (%evt.deltatime) %proc.name %evt.dir %evt.type %evt.args'"
 short_description = "find time gaps between events"
 category = "misc"
 
@@ -8,7 +8,7 @@ args =
 {
     {
         name = "threshold",
-        description = "default 1 second, i.e., 1.0",
+        description = "in seconds, default 1 s, i.e., 1.0",
         argtype = "float",
         optional = true
     },
