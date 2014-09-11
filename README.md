@@ -17,7 +17,7 @@ The `find_time_gap` chisel only shows events with a time difference to the prece
 * Example only considering events from process _sysdig_ and default threshold of 1 second
 
     ```
-    $ sysdig -c find_gap proc.name=sysdig
+    $ sysdig -c find_time_gap proc.name=sysdig
     ```
 
 * Example only considering events from process _sysdig_ and threshold of 100 ms
